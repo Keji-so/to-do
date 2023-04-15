@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.input-block {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.input-field {
+  flex: 1;
+  height: 50px;
+  border-radius: 5px;
+  border: #ccc 1px solid;
+  outline: none;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+.btn {
+  min-height: 50px;
+  padding: 15px 35px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: rgb(52, 50, 50);
+  color: rgb(231, 229, 229);
+  border: none;
+  transition: background-color 0.4s ease;
+  border-radius: 5px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.list-container {
+  width: 50%;
+}
+
+ol {
+  padding-left: 10px;
+}
+
+li {
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+
+.item {
+  max-width: 70%;
+}
+
+.list-flex,.btn-flex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn.done, .btn.delete {
+  padding: 10px 20px;
+  min-height: 30px;
+}
+
+.btn.done {
+  background-color: rgb(44, 150, 115);
+  margin-right: 20px;
+}
+
+.btn.delete {
+  background-color: rgb(226, 30, 138);
+}
+
+.checked {
+  width: 30px;
+  height: 30px;
+  border: #000 1px solid;
+  border-radius: 5px;
+  position: absolute;
+  left: -50px;
+  background-image: url(/check-line.svg);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
